@@ -5,6 +5,8 @@ public class Coord extends JPanel {
     int w = 1000, h = 1000;
     Coord(){
     }
+
+    @Override
     public void paint (Graphics g) {
         int x = -w/100;
         int y = h/100;

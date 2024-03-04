@@ -26,7 +26,6 @@ public class Pointpu extends JPanel implements MouseListener, MouseMotionListene
     }
     @Override
     public void mouseClicked(MouseEvent e) {
-
     }
     @Override
     public void mouseEntered(MouseEvent e) {
@@ -48,6 +47,7 @@ public class Pointpu extends JPanel implements MouseListener, MouseMotionListene
 
     }
 
+    @Override
     public void paint (Graphics g) {
         try {
             for (int i = 0; i < mas_points.size(); i++) {
@@ -79,6 +79,7 @@ public class Pointpu extends JPanel implements MouseListener, MouseMotionListene
 
             }
         } catch (Exception e) {
+            System.out.println(e.getMessage());
         }
 
     }
